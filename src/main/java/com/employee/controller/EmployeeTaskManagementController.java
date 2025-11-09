@@ -21,7 +21,14 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api")
 @ApiResponses(value = {
-        @ApiResponse(responseCode = "200",description = "OK")
+        @ApiResponse(responseCode = "200", description = "OK"),
+        @ApiResponse(responseCode = "201", description = "Created"),
+        @ApiResponse(responseCode = "400", description = "Bad Request"),
+        @ApiResponse(responseCode = "401", description = "Unauthorized"),
+        @ApiResponse(responseCode = "403", description = "Forbidden"),
+        @ApiResponse(responseCode = "404", description = "Not Found"),
+        @ApiResponse(responseCode = "409", description = "Conflict"),
+        @ApiResponse(responseCode = "500", description = "Internal Server Error")
 })
 public class EmployeeTaskManagementController {
 
